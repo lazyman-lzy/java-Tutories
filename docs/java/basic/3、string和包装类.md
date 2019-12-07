@@ -97,33 +97,39 @@ runoob
 
 ![](https://img2018.cnblogs.com/blog/710412/201902/710412-20190213220237169-1966705420.png)
 
-### 三个方法的使用： lenth()   substring()   charAt()
+###  三个方法的使用： lenth()   substring()   charAt()
 
 
 
-<pre>package com.mpp.string; public class StringDemo1 { public static void main(String[] args) { //定义一个字符串"晚来天欲雪 能饮一杯无"
-        String str = "晚来天欲雪 能饮一杯无";
-        System.out.println("字符串的长度是："+str.length()); //字符串的雪字打印输出  charAt(int index)
-        System.out.println(str.charAt(4)); //取出子串  天欲
-        System.out.println(str.substring(2));   //取出从index2开始直到最后的子串，包含2
-        System.out.println(str.substring(2,4));  //取出index从2到4的子串，包含2不包含4  顾头不顾尾
- }
-}</pre>
+<pre>
+        public class StringDemo1 { 
+            public static void main(String[] args) { //定义一个字符串"晚来天欲雪 能饮一杯无"
+                String str = "晚来天欲雪 能饮一杯无";
+                System.out.println("字符串的长度是："+str.length()); //字符串的雪字打印输出  charAt(int index)
+                System.out.println(str.charAt(4)); //取出子串  雪
+                System.out.println(str.substring(2));   //取出从index2开始直到最后的子串，包含2 天欲雪 能饮一杯无
+                System.out.println(str.substring(2,4));  //取出index从2到4的子串，包含2不包含4  天欲
+            }
+        }
+</pre>
 
 
 
  两个方法的使用,求字符或子串第一次/最后一次在字符串中出现的位置： indexOf()   lastIndexOf()  
 
 
-<pre>package com.mpp.string; public class StringDemo2 { public static void main(String[] args) {
-        String str = new String("赵客缦胡缨 吴钩胡缨霜雪明"); //查找胡在字符串中第一次出现的位置
-        System.out.println("\"胡\"在字符串中第一次出现的位置："+str.indexOf("胡")); //查找子串"胡缨"在字符串中第一次出现的位置
-        System.out.println("\"胡缨\"在字符串中第一次出现的位置"+str.indexOf("胡缨")); //查找胡在字符串中最后一次次出现的位置
-        System.out.println(str.lastIndexOf("胡")); //查找子串"胡缨"在字符串中最后一次出现的位置
-        System.out.println(str.lastIndexOf("胡缨")); //从indexof为5的位置，找第一次出现的"吴"
-        System.out.println(str.indexOf("吴",5));
-    }
-}</pre>
+<pre>package com.mpp.string; 
+        public class StringDemo2 { 
+            public static void main(String[] args) {
+                String str2 = new String("赵客缦胡缨,吴钩胡缨霜雪明"); 
+                System.out.println("\"胡\"在字符串中第一次出现的位置："+str2.indexOf("胡")); //查找子串"胡"在字符串中第一次出现的位置 3
+                System.out.println("\"胡缨\"在字符串中第一次出现的位置"+str2.indexOf("胡缨")); //查找"胡缨"在字符串中最后一次次出现的位置 3
+                System.out.println(str2.lastIndexOf("胡")); //查找子串"胡"在字符串中最后一次出现的位置 8
+                System.out.println(str2.lastIndexOf("胡缨"));//查找子串"胡缨"在字符串中最后一次出现的位置 8
+                System.out.println(str2.indexOf("吴",5));//从indexof为5的位置，找第一次出现的"吴"  6
+            }
+       }
+</pre>
 
 
 
@@ -131,16 +137,21 @@ runoob
 ### 字符串与byte数组间的相互转换
 
 
-<pre>package com.mpp.string; import java.io.UnsupportedEncodingException; public class StringDemo3 { public static void main(String[] args) throws UnsupportedEncodingException { //字符串和byte数组之间的相互转换
- String str = new String("hhhabc银鞍照白马 飒沓如流星"); //将字符串转换为byte数组，并打印输出
-        byte[] arrs = str.getBytes("GBK"); for(int i=0;i){
-            System.out.print(arrs[i]);
-        } //将byte数组转换成字符串
- System.out.println();
-        String str1 = new String(arrs,"GBK");  //保持字符集的一致，否则会出现乱码
- System.out.println(str1);
+<pre>
+    package com.mpp.string; import java.io.UnsupportedEncodingException; 
+    public class StringDemo3 { 
+        public static void main(String[] args) throws UnsupportedEncodingException { //字符串和byte数组之间的相互转换
+            String str = new String("hhhabc银鞍照白马 飒沓如流星"); //将字符串转换为byte数组，并打印输出
+            byte[] arrs = str.getBytes("GBK"); 
+            for(int i=0;i<arrs.length;i++){
+                System.out.print(arrs[i]);
+            } //将byte数组转换成字符串
+            System.out.println();
+            String str1 = new String(arrs,"GBK");  //保持字符集的一致，否则会出现乱码
+            System.out.println(str1);
+        }
     }
-}</pre>
+</pre>
 
 
 ### ==运算符和equals之间的区别：
