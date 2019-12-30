@@ -47,7 +47,8 @@ https://www.jianshu.com/p/0e84b8d3606c
 ## LinkedList
 ### 概述
 > 
->   LinkedList与ArrayList一样实现List接口，只是ArrayList是List接口的大小可变数组的实现，LinkedList是List接口链表的实现。基于链表实现的方式使得LinkedList在插入和删除时更优于ArrayList，而随机访问则比ArrayList逊色些。
+>   LinkedList与ArrayList一样实现List接口，只是ArrayList是List接口的大小可变数组的实现，LinkedList是List接口链表的实现。基于链表实现的方式使得LinkedList在插入和
+    删除时更优于ArrayList，而随机访问则比ArrayList逊色些。
 > 
 >   LinkedList实现所有可选的列表操作，并允许所有的元素包括null。
 > 
@@ -70,7 +71,9 @@ https://www.jianshu.com/p/0e84b8d3606c
     public class LinkedList<E>
         extends AbstractSequentialList<E>
         implements List<E>, Deque<E>, Cloneable, java.io.Serializable
-          从这段代码中我们可以清晰地看出LinkedList继承AbstractSequentialList，实现List、Deque、Cloneable、Serializable。其中AbstractSequentialList提供了 List 接口的骨干实现，从而最大限度地减少了实现受“连续访问”数据存储（如链接列表）支持的此接口所需的工作,从而以减少实现List接口的复杂度。Deque一个线性 collection，支持在两端插入和移除元素，定义了双端队列的操作。
+          从这段代码中我们可以清晰地看出LinkedList继承AbstractSequentialList，实现List、Deque、Cloneable、Serializable。
+          其中AbstractSequentialList提供了 List 接口的骨干实现，从而最大限度地减少了实现受“连续访问”数据存储（如链接列表）支持的此接口所需的工作,
+          从而以减少实现List接口的复杂度。Deque一个线性 collection，支持在两端插入和移除元素，定义了双端队列的操作。
 
 #### 属性
 

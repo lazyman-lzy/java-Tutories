@@ -453,9 +453,9 @@ Comparable 可以让实现它的类的对象进行比较，具体的比较规则
 
 compareTo 方法的返回值有三种情况：
 
-    e1.compareTo(e2)  0 即 e1  e2
+    e1.compareTo(e2) > 0 即 e1 > e2
     e1.compareTo(e2) = 0 即 e1 = e2
-    e1.compareTo(e2)  0 即 e1  e2
+    e1.compareTo(e2) < 0 即 e1 < e2
 
 注意：
 
