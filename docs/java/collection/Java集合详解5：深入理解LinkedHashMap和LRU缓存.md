@@ -150,7 +150,7 @@
 
 　　该构造函数意在构造一个指定初始容量和指定负载因子的具有指定迭代顺序的LinkedHashMap，其源码如下：
 
-/**
+    /**
      * Constructs an empty <tt>LinkedHashMap</tt> instance with the
      * specified initial capacity, load factor and ordering mode.
      *
@@ -203,7 +203,7 @@
         init();
     }
 
-   /**
+    /**
      * Initialization hook for subclasses. This method is called
      * in all constructors and pseudo-constructors (clone, readObject)
      * after HashMap has been initialized but before any entries have
@@ -215,7 +215,7 @@
 
 　　在LinkedHashMap中，它重写了init方法以便初始化双向列表，源码如下：
 
- /**
+    /**
      * Called by superclass constructors and pseudoconstructors (clone,
      * readObject) before any entries are inserted into the map.  Initializes
      * the chain.
@@ -530,7 +530,7 @@ HashMap 中不存在该 key。
 
 该方法提供了LRU算法的实现，它将最近使用的Entry放到双向循环链表的尾部。也就是说，当accessOrder为true时，get方法和put方法都会调用recordAccess方法使得最近使用的Entry移到双向链表的末尾；当accessOrder为默认值false时，从源码中可以看出recordAccess方法什么也不会做。我们反过头来，再看一下addEntry方法：
 
-   /**
+    /**
      * This override alters behavior of superclass put method. It causes newly
      * allocated entry to get inserted at the end of the linked list and
      * removes the eldest entry if appropriate.

@@ -89,7 +89,7 @@ Java开发工程师一般负责后端开发，当然也有专门做Java Web的�
 
   
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/XHh0SksQZPOTBB6VxkibFrAMBJ8ibbR5MsqoHcGCTTk8lwnicOzjrYsEPS0m4z5TptXoUlzlFfu7hsLfWk9gBz5hA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://mmbiz.qpic.cn/mmbiz_jpg/XHh0SksQZPOTBB6VxkibFrAMBJ8ibbR5MsqoHcGCTTk8lwnicOzjrYsEPS0m4z5TptXoUlzlFfu7hsLfWk9gBz5hA/640?wx_fmt=jpeg)
 
 这本其实我刚开始没看太懂，可能是当时太水的原因，但是一般是大牛力荐的书。
 
@@ -97,7 +97,7 @@ Java开发工程师一般负责后端开发，当然也有专门做Java Web的�
 
   
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/XHh0SksQZPOTBB6VxkibFrAMBJ8ibbR5MsCYHvAMX255u3jPtfmknRsYt7JRS48VvzZSIiarQTNM96pv942AbmgIA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://mmbiz.qpic.cn/mmbiz_jpg/XHh0SksQZPOTBB6VxkibFrAMBJ8ibbR5MsCYHvAMX255u3jPtfmknRsYt7JRS48VvzZSIiarQTNM96pv942AbmgIA/640?wx_fmt=jpeg)
 
   
 

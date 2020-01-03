@@ -32,7 +32,7 @@
   * [技术公众号：Java技术江湖](#技术公众号：java技术江湖)
 
 
-# ![](https://mmbiz.qpic.cn/mmbiz_jpg/XHh0SksQZPNiac1cDGFicIqDTr2PoAq2jmvD3JnkUOiaBzxgZDjh9pcicS0rCKcGaWvGVnm7ZH2LvlODKAtzANlDZg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+# ![](https://mmbiz.qpic.cn/mmbiz_jpg/XHh0SksQZPNiac1cDGFicIqDTr2PoAq2jmvD3JnkUOiaBzxgZDjh9pcicS0rCKcGaWvGVnm7ZH2LvlODKAtzANlDZg/640?wx_fmt=jpeg)
 
 # 前言
 
