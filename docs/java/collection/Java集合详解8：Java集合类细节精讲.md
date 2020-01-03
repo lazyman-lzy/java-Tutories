@@ -207,7 +207,7 @@ asList接受参数后，直接new 一个ArrayList，到这里看应该是没有�
 
 首先我们先看如下实例：
 
-public static void main(String[] args) {
+    public static void main(String[] args) {
         List<Integer> list1 = new ArrayList<Integer>();
         list1.add(1);
         list1.add(2);
@@ -240,7 +240,7 @@ public static void main(String[] args) {
 
 subListRangeCheck方式是判断fromIndex、toIndex是否合法，如果合法就直接返回一个subList对象，注意在产生该new该对象的时候传递了一个参数 this ，该参数非常重要，因为他代表着原始list。
 
-/**
+    /**
      * 继承AbstractList类，实现RandomAccess接口
      */
     private class SubList extends AbstractList<E> implements RandomAccess {
